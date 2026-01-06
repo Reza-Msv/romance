@@ -26,10 +26,9 @@ export default function Header() {
       </div>
 
       <h1
-        className="text-white text-base font-extrabold absolute left-1/2 -translate-x-1/2 whitespace-nowrap"
-        style={{ fontFamily: "Azonix, sans-serif" }}
+        className="text-white text-base  font-serif font-extrabold absolute left-1/2 -translate-x-1/2 whitespace-nowrap"
       >
-        Caffe Romance
+        Cafe Romance
       </h1>
 
       <Image
