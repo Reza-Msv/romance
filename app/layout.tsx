@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Header from "@/components/common/header";
+import CartDrawer from "@/components/cart/CartDrawer";
+import { CartProvider } from "@/context/CartContext";
 
 const yekanBakh = localFont({
   src: "../public/fonts/YekanBakhHeavy.woff",
@@ -24,7 +26,6 @@ export const metadata: Metadata = {
     "منوی دیجیتال کافه",
   ],
   authors: [{ name: "Romance Cafe" }],
-  viewport: "width=device-width, initial-scale=1",
   icons: {
     icon: "/favicon.ico",
   },
@@ -33,7 +34,6 @@ export const metadata: Metadata = {
     description: "بهترین تجربه‌ی طعم و آرامش در کافه رومنس",
     type: "website",
     locale: "fa_IR",
-  
   },
 };
 
@@ -44,11 +44,14 @@ interface RootLayoutProps {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="fa" dir="rtl">
-      <body className={yekanBakh.className}>
-        <div className="min-h-screen bg-stone-50 text-stone-900">
-          <Header />
-          <main>{children}</main>
-        </div>
+      <body className={`${yekanBakh.className} bg-[#141211] text-stone-100 antialiased selection:bg-amber-500 selection:text-stone-950`}>
+        <CartProvider>
+          <div className="min-h-screen flex flex-col bg-[#141211] text-stone-100">
+            <Header />
+            <main className="flex-1">{children}</main>
+            <CartDrawer />
+          </div>
+        </CartProvider>
       </body>
     </html>
   );
