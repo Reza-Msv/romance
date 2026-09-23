@@ -147,7 +147,7 @@ export const menuData: MenuCategory[] = [
     category: "Mocktails&Juice",
     items: [
       { barcode: "101", name: "اب هویج", price: 100000, image: "https://images.unsplash.com/photo-1613478223719-2ab802602423?w=500&auto=format&fit=crop&q=80" },
-      { barcode: "102", name: "شیر موز", price: 110000, image: "https://images.unsplash.com/photo-1553787499-6f9133860278?w=500&auto=format&fit=crop&q=80" },
+      { barcode: "102", name: "شیر موز", price: 140000, image: "https://images.unsplash.com/photo-1553787499-6f9133860278?w=500&auto=format&fit=crop&q=80" },
       { barcode: "103", name: "اب طالبی", price: 120000, image: "https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=500&auto=format&fit=crop&q=80" },
       { barcode: "104", name: "اب انبه", price: 210000, image: "https://images.unsplash.com/photo-1546173159-315724a31696?w=500&auto=format&fit=crop&q=80" },
       { barcode: "105", name: "شیر انبه", price: 220000, image: "https://images.unsplash.com/photo-1546173159-315724a31696?w=500&auto=format&fit=crop&q=80" },
@@ -195,7 +195,7 @@ export const menuData: MenuCategory[] = [
   {
     category: "SpecialMix",
     items: [
-      { barcode: "121", name: "شیرموز مغزدار", price: 230000, image: "https://images.unsplash.com/photo-1579954115545-aad516422837?w=500&auto=format&fit=crop&q=80" },
+      { barcode: "121", name: "شیرموز مغزدار", price: 250000, image: "https://images.unsplash.com/photo-1579954115545-aad516422837?w=500&auto=format&fit=crop&q=80" },
       { barcode: "122", name: "شیر پسته", price: 230000, image: "https://images.unsplash.com/photo-1579954115545-aad516422837?w=500&auto=format&fit=crop&q=80" },
       { barcode: "123", name: "معجون 1 نفره", price: 350000, image: "https://images.unsplash.com/photo-1579954115545-aad516422837?w=500&auto=format&fit=crop&q=80" },
       { barcode: "124", name: "معجون 2 نفره", price: 450000, image: "https://images.unsplash.com/photo-1579954115545-aad516422837?w=500&auto=format&fit=crop&q=80" },
